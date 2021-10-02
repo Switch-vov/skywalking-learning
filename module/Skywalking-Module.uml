@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>org.apache.skywalking.oap.server.library.module.ModuleDefine</OriginalElement>
+  <nodes>
+    <node x="653.5000000000001" y="230.5">org.apache.skywalking.oap.server.library.module.ModuleConfig</node>
+    <node x="1067.4688069908811" y="0.0">org.apache.skywalking.oap.server.library.module.ApplicationConfiguration</node>
+    <node x="1007.3978280141843" y="482.5">org.apache.skywalking.oap.server.library.module.ApplicationConfiguration.ModuleConfiguration</node>
+    <node x="114.72177684903761" y="68.5">org.apache.skywalking.oap.server.library.module.Service</node>
+    <node x="980.1000000000001" y="219.0">org.apache.skywalking.oap.server.library.module.ApplicationConfiguration.ProviderConfiguration</node>
+    <node x="139.5000000000001" y="219.5">org.apache.skywalking.oap.server.library.module.ModuleServiceHolder</node>
+    <node x="665.0228280141843" y="527.5">org.apache.skywalking.oap.server.library.module.ModuleProviderHolder</node>
+    <node x="0.0" y="361.0">org.apache.skywalking.oap.server.library.module.ModuleProvider</node>
+    <node x="1158.6116641337385" y="912.0">org.apache.skywalking.oap.server.library.module.ModuleDefineHolder</node>
+    <node x="126.67163753799366" y="823.0">org.apache.skywalking.oap.server.library.module.ModuleDefine</node>
+    <node x="253.23413753799366" y="1152.0">org.apache.skywalking.oap.server.library.module.ModuleManager</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="org.apache.skywalking.oap.server.library.module.ApplicationConfiguration.ModuleConfiguration" target="org.apache.skywalking.oap.server.library.module.ApplicationConfiguration.ProviderConfiguration" relationship="TO_MANY">
+      <point x="0.0" y="-72.5" />
+      <point x="1238.3978280141841" y="339.0" />
+      <point x="1177.3500000000001" y="339.0" />
+      <point x="65.75" y="39.0" />
+    </edge>
+    <edge source="org.apache.skywalking.oap.server.library.module.ModuleProviderHolder" target="org.apache.skywalking.oap.server.library.module.ModuleServiceHolder" relationship="DEPENDENCY">
+      <point x="0.0" y="-27.5" />
+      <point x="789.0228280141843" y="329.0" />
+      <point x="510.0000000000001" y="329.0" />
+      <point x="123.5" y="38.5" />
+    </edge>
+    <edge source="org.apache.skywalking.oap.server.library.module.ModuleManager" target="org.apache.skywalking.oap.server.library.module.ModuleDefineHolder" relationship="REALIZATION">
+      <point x="100.9375" y="-94.5" />
+      <point x="515.6716375379937" y="1120.0" />
+      <point x="1290.6116641337385" y="1120.0" />
+      <point x="0.0" y="38.5" />
+    </edge>
+    <edge source="org.apache.skywalking.oap.server.library.module.ModuleManager" target="org.apache.skywalking.oap.server.library.module.ModuleProviderHolder" relationship="DEPENDENCY">
+      <point x="60.5625" y="-94.5" />
+      <point x="475.29663753799366" y="1110.0" />
+      <point x="851.0228280141843" y="1110.0" />
+      <point x="62.0" y="27.5" />
+    </edge>
+    <edge source="org.apache.skywalking.oap.server.library.module.ModuleProvider" target="org.apache.skywalking.oap.server.library.module.Service" relationship="DEPENDENCY">
+      <point x="-61.749999999999886" y="-194.0" />
+      <point x="185.2500000000001" y="339.0" />
+      <point x="129.0000000000001" y="339.0" />
+      <point x="129.0000000000001" y="198.0" />
+      <point x="175.7217768490376" y="198.0" />
+      <point x="175.7217768490376" y="188.0" />
+      <point x="197.9717768490376" y="188.0" />
+      <point x="27.75" y="15.0" />
+    </edge>
+    <edge source="org.apache.skywalking.oap.server.library.module.ModuleProvider" target="org.apache.skywalking.oap.server.library.module.ModuleConfig" relationship="DEPENDENCY">
+      <point x="185.25000000000006" y="-194.0" />
+      <point x="432.25000000000006" y="339.0" />
+      <point x="654.5228280141843" y="339.0" />
+      <point x="654.5228280141843" y="319.0" />
+      <point x="734.5000000000001" y="319.0" />
+      <point x="0.0" y="27.5" />
+    </edge>
+    <edge source="org.apache.skywalking.oap.server.library.module.ModuleManager" target="org.apache.skywalking.oap.server.library.module.ApplicationConfiguration" relationship="DEPENDENCY">
+      <point x="141.3125" y="-94.5" />
+      <point x="556.0466375379937" y="1130.0" />
+      <point x="1507.1478280141841" y="1130.0" />
+      <point x="1507.1478280141841" y="198.0" />
+      <point x="1401.7188069908811" y="198.0" />
+      <point x="143.25" y="83.5" />
+    </edge>
+    <edge source="org.apache.skywalking.oap.server.library.module.ApplicationConfiguration" target="org.apache.skywalking.oap.server.library.module.ApplicationConfiguration.ModuleConfiguration" relationship="TO_MANY">
+      <point x="47.75" y="83.5" />
+      <point x="1306.2188069908811" y="198.0" />
+      <point x="1309.85" y="198.0" />
+      <point x="1309.85" y="329.0" />
+      <point x="1423.1978280141843" y="329.0" />
+      <point x="184.79999999999995" y="-72.5" />
+    </edge>
+    <edge source="org.apache.skywalking.oap.server.library.module.ModuleServiceHolder" target="org.apache.skywalking.oap.server.library.module.Service" relationship="DEPENDENCY">
+      <point x="0.0" y="-38.5" />
+      <point x="386.5000000000001" y="198.0" />
+      <point x="175.7217768490376" y="198.0" />
+      <point x="175.7217768490376" y="188.0" />
+      <point x="197.9717768490376" y="188.0" />
+      <point x="27.75" y="15.0" />
+    </edge>
+    <edge source="org.apache.skywalking.oap.server.library.module.ApplicationConfiguration.ModuleConfiguration" target="org.apache.skywalking.oap.server.library.module.ApplicationConfiguration" relationship="INNER_CLASS">
+      <point x="-184.79999999999995" y="-72.5" />
+      <point x="1053.5978280141844" y="339.0" />
+      <point x="969.6000000000001" y="339.0" />
+      <point x="969.6000000000001" y="198.0" />
+      <point x="1039.9688069908811" y="198.0" />
+      <point x="1039.9688069908811" y="188.0" />
+      <point x="1115.2188069908811" y="188.0" />
+      <point x="-143.25" y="83.5" />
+    </edge>
+    <edge source="org.apache.skywalking.oap.server.library.module.ApplicationConfiguration.ProviderConfiguration" target="org.apache.skywalking.oap.server.library.module.ApplicationConfiguration" relationship="INNER_CLASS">
+      <point x="0.0" y="-39.0" />
+      <point x="1111.6000000000001" y="198.0" />
+      <point x="1039.9688069908811" y="198.0" />
+      <point x="1039.9688069908811" y="188.0" />
+      <point x="1115.2188069908811" y="188.0" />
+      <point x="-143.25" y="83.5" />
+    </edge>
+    <edge source="org.apache.skywalking.oap.server.library.module.ModuleProvider" target="org.apache.skywalking.oap.server.library.module.Service" relationship="TO_MANY">
+      <point x="-185.2499999999999" y="-194.0" />
+      <point x="61.750000000000114" y="339.0" />
+      <point x="118.00000000000011" y="339.0" />
+      <point x="118.00000000000011" y="188.0" />
+      <point x="142.4717768490376" y="188.0" />
+      <point x="-27.75" y="15.0" />
+    </edge>
+    <edge source="org.apache.skywalking.oap.server.library.module.ModuleDefine" target="org.apache.skywalking.oap.server.library.module.ModuleProvider" relationship="TO_ONE">
+      <point x="-167.1428571428571" y="-127.5" />
+      <point x="252.02878039513655" y="801.0" />
+      <point x="288.1666666666667" y="801.0" />
+      <point x="41.166666666666686" y="194.0" />
+    </edge>
+    <edge source="org.apache.skywalking.oap.server.library.module.ModuleProvider" target="org.apache.skywalking.oap.server.library.module.ModuleDefine" relationship="TO_ONE">
+      <point x="123.5" y="194.0" />
+      <point x="370.5" y="801.0" />
+      <point x="335.6002089665651" y="801.0" />
+      <point x="-83.57142857142856" y="-127.5" />
+    </edge>
+    <edge source="org.apache.skywalking.oap.server.library.module.ModuleManager" target="org.apache.skywalking.oap.server.library.module.ModuleDefine" relationship="DEPENDENCY">
+      <point x="20.1875" y="-94.5" />
+      <point x="434.92163753799366" y="1100.0" />
+      <point x="614.1716375379937" y="1100.0" />
+      <point x="195.0" y="127.5" />
+    </edge>
+    <edge source="org.apache.skywalking.oap.server.library.module.ModuleDefine" target="org.apache.skywalking.oap.server.library.module.ModuleManager" relationship="DEPENDENCY">
+      <point x="-195.0" y="127.5" />
+      <point x="224.17163753799366" y="1110.0" />
+      <point x="354.42163753799366" y="1110.0" />
+      <point x="-60.5625" y="-94.5" />
+    </edge>
+    <edge source="org.apache.skywalking.oap.server.library.module.ApplicationConfiguration.ModuleConfiguration" target="org.apache.skywalking.oap.server.library.module.ApplicationConfiguration.ProviderConfiguration" relationship="CREATE">
+      <point x="-92.39999999999998" y="-72.5" />
+      <point x="1145.9978280141843" y="329.0" />
+      <point x="1045.8500000000001" y="329.0" />
+      <point x="-65.75" y="39.0" />
+    </edge>
+    <edge source="org.apache.skywalking.oap.server.library.module.ApplicationConfiguration" target="org.apache.skywalking.oap.server.library.module.ApplicationConfiguration.ModuleConfiguration" relationship="CREATE">
+      <point x="-47.75" y="83.5" />
+      <point x="1210.7188069908811" y="198.0" />
+      <point x="1298.8500000000001" y="198.0" />
+      <point x="1298.8500000000001" y="339.0" />
+      <point x="1330.7978280141842" y="339.0" />
+      <point x="92.39999999999998" y="-72.5" />
+    </edge>
+    <edge source="org.apache.skywalking.oap.server.library.module.ModuleDefineHolder" target="org.apache.skywalking.oap.server.library.module.ModuleProviderHolder" relationship="DEPENDENCY">
+      <point x="0.0" y="-38.5" />
+      <point x="1290.6116641337385" y="818.4184914841849" />
+      <point x="1010.7953624305756" y="818.4184914841849" />
+      <point x="1010.7953624305756" y="724.8369829683699" />
+      <point x="851.0228280141843" y="724.8369829683699" />
+      <point x="62.0" y="27.5" />
+    </edge>
+    <edge source="org.apache.skywalking.oap.server.library.module.ModuleDefine" target="org.apache.skywalking.oap.server.library.module.ModuleConfig" relationship="DEPENDENCY">
+      <point x="83.57142857142856" y="-127.5" />
+      <point x="502.7430661094222" y="771.0" />
+      <point x="654.5228280141843" y="771.0" />
+      <point x="654.5228280141843" y="319.0" />
+      <point x="734.5000000000001" y="319.0" />
+      <point x="0.0" y="27.5" />
+    </edge>
+    <edge source="org.apache.skywalking.oap.server.library.module.ModuleDefine" target="org.apache.skywalking.oap.server.library.module.ModuleProviderHolder" relationship="REALIZATION">
+      <point x="167.1428571428571" y="-127.5" />
+      <point x="586.3144946808508" y="781.0" />
+      <point x="727.0228280141843" y="781.0" />
+      <point x="-62.0" y="27.5" />
+    </edge>
+    <edge source="org.apache.skywalking.oap.server.library.module.ModuleDefine" target="org.apache.skywalking.oap.server.library.module.ApplicationConfiguration.ModuleConfiguration" relationship="DEPENDENCY">
+      <point x="250.71428571428578" y="-127.5" />
+      <point x="669.8859232522794" y="791.0" />
+      <point x="1238.3978280141841" y="791.0" />
+      <point x="0.0" y="72.5" />
+    </edge>
+    <edge source="org.apache.skywalking.oap.server.library.module.ModuleProvider" target="org.apache.skywalking.oap.server.library.module.ModuleServiceHolder" relationship="REALIZATION">
+      <point x="61.75000000000006" y="-194.0" />
+      <point x="308.75000000000006" y="339.0" />
+      <point x="263.0000000000001" y="339.0" />
+      <point x="-123.5" y="38.5" />
+    </edge>
+    <edge source="org.apache.skywalking.oap.server.library.module.ModuleManager" target="org.apache.skywalking.oap.server.library.module.ModuleDefine" relationship="TO_MANY">
+      <point x="-20.1875" y="-94.5" />
+      <point x="394.54663753799366" y="1130.0" />
+      <point x="419.17163753799366" y="1130.0" />
+      <point x="0.0" y="127.5" />
+    </edge>
+    <edge source="org.apache.skywalking.oap.server.library.module.ModuleProvider" target="org.apache.skywalking.oap.server.library.module.ModuleManager" relationship="TO_ONE">
+      <point x="-205.83333333333337" y="194.0" />
+      <point x="41.16666666666663" y="801.0" />
+      <point x="94.17163753799366" y="801.0" />
+      <point x="94.17163753799366" y="1130.0" />
+      <point x="273.42163753799366" y="1130.0" />
+      <point x="-141.3125" y="-94.5" />
+    </edge>
+    <edge source="org.apache.skywalking.oap.server.library.module.ModuleProvider" target="org.apache.skywalking.oap.server.library.module.ModuleDefine" relationship="DEPENDENCY">
+      <point x="205.83333333333331" y="194.0" />
+      <point x="452.8333333333333" y="801.0" />
+      <point x="419.17163753799366" y="801.0" />
+      <point x="0.0" y="-127.5" />
+    </edge>
+    <edge source="org.apache.skywalking.oap.server.library.module.ModuleDefine" target="org.apache.skywalking.oap.server.library.module.ModuleProvider" relationship="DEPENDENCY">
+      <point x="-250.71428571428567" y="-127.5" />
+      <point x="168.457351823708" y="791.0" />
+      <point x="257.09380699088126" y="791.0" />
+      <point x="257.09380699088126" y="781.0" />
+      <point x="205.83333333333337" y="781.0" />
+      <point x="-41.166666666666686" y="194.0" />
+    </edge>
+    <edge source="org.apache.skywalking.oap.server.library.module.ModuleProvider" target="org.apache.skywalking.oap.server.library.module.ModuleManager" relationship="DEPENDENCY">
+      <point x="-123.5" y="194.0" />
+      <point x="123.5" y="781.0" />
+      <point x="116.17163753799366" y="781.0" />
+      <point x="116.17163753799366" y="1110.0" />
+      <point x="354.42163753799366" y="1110.0" />
+      <point x="-60.5625" y="-94.5" />
+    </edge>
+    <edge source="org.apache.skywalking.oap.server.library.module.ModuleManager" target="org.apache.skywalking.oap.server.library.module.ModuleProvider" relationship="DEPENDENCY">
+      <point x="-100.9375" y="-94.5" />
+      <point x="313.79663753799366" y="1120.0" />
+      <point x="105.17163753799366" y="1120.0" />
+      <point x="105.17163753799366" y="791.0" />
+      <point x="257.09380699088126" y="791.0" />
+      <point x="257.09380699088126" y="781.0" />
+      <point x="205.83333333333337" y="781.0" />
+      <point x="-41.166666666666686" y="194.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="0.6039676708302718" showDependencies="true" x="754.0" y="670.5000000000001" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Constructors</Category>
+    <Category>Fields</Category>
+    <Category>Inner Classes</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
